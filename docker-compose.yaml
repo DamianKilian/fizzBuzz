@@ -32,7 +32,7 @@ services:
         volumes:
             - ./dockerfiles/mysql:/var/lib/mysql
         environment:
-            MYSQL_DATABASE: shop
+            MYSQL_DATABASE: fizz_buzz
             MYSQL_USER: admin
             MYSQL_PASSWORD: admin
             MYSQL_ROOT_PASSWORD: admin
@@ -79,7 +79,7 @@ services:
             - laravel
 
     npm:
-        image: node:current-alpine
+        image: node:22
         volumes:
             - ./:/var/www/html
         ports:

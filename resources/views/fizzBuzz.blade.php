@@ -7,4 +7,6 @@
     </form>
 
     {{ $fizzBuzz }}
+    <hr>
+    
 @endsection
