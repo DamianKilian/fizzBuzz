@@ -8,5 +8,5 @@
 
     {{ $fizzBuzz }}
     <hr>
-    
+    <a href="{{ route('persons.index') }}" class="btn btn-primary">Persons</a>
 @endsection
