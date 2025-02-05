@@ -9,7 +9,8 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('/', [App\Http\Controllers\HomeController::class, 'fizzBuzz'])->name('fizzBuzz');
+Route::get('/fizz-buzz', [App\Http\Controllers\HomeController::class, 'fizzBuzz'])->name('fizzBuzz');
+Route::post('/publish', [App\Http\Controllers\HomeController::class, 'publish'])->name('publish');
 
 Route::resource('persons', PersonController::class);
 

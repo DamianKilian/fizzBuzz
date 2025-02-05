@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Services\SubscribeService;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -11,6 +12,11 @@ class HomeController extends Controller
         // $this->middleware('auth');
     }
 
+    public function publish(Request $request)
+    {
+        SubscribeService::publish($request->subMessage);
+    }
+    
     public function fizzBuzz(Request $request)
     {
         $fizzBuzz = '';

@@ -70,4 +70,13 @@
             </div>
         </div>
     </div>
+    <div class="container mt-4">
+        <form method="post" action="{{ route('publish') }}">
+            @csrf
+            <div class="input-group mb-3">
+                <input name="subMessage" class="form-control" placeholder="Sub message">
+                <button class="btn btn-outline-secondary" type="submit">Publish</button>
+            </div>
+        </form>
+    </div>
 @endsection
